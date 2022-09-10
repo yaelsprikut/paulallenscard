@@ -83,7 +83,7 @@ function App() {
         </div>
         <div className="puerta-c">
           <div className="puerta">
-            <div className="puerta__front face"> </div>
+            <div className="puerta__front face"><h1>lowereffortmemes.com</h1> </div>
             <div className="puerta__back face"> </div>
             <div className="puerta__right face"> </div>
             <div className="puerta__left face"> </div>
