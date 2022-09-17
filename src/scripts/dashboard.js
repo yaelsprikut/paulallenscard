@@ -6,7 +6,6 @@
  */
 const $ = require('jquery')
 function loadDashboardScripts() {
-    console.log('load script')
     const speed = 2000
     const container = $('.display-animation')
     container.each(function () {
@@ -54,4 +53,4 @@ function loadDashboardScripts() {
 }
 setTimeout(function () {
     loadDashboardScripts()
-}, 500)
+}, 2000)

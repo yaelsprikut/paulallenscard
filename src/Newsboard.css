@@ -202,6 +202,7 @@ body {
   position: relative;
   display: block;
   padding: 0;
+  background-color: black;
 }
 .tile .content-wrapper .tile-content .tile-holder.tile-holder-sm {
   position: absolute;
@@ -1286,6 +1287,6 @@ body {
 
 @media only screen and (max-width: 600px) {
     .tile {
-      width: 100% !important;
+      /* width: 100% !important; */
     }
   }
