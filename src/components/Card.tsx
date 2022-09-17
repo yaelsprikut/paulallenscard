@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from 'styled-components'
+
 
 const Card = (props: any) => {
     const thing = () => {
@@ -8,20 +8,22 @@ const Card = (props: any) => {
                 return (
                     <a
                         className="tile tile-lg tile-pink ripple-effect"
-                        href="#"
+                        href={props.url}
+                        target="_blank"
                     >
                         <span className="content-wrapper">
                             <span className="tile-content">
                                 <span
                                     className="tile-img"
                                     style={{
-                                        backgroundImage:
-                                            'url(https://www.google.com/design/images/google_spec.png)',
+                                        backgroundImage: `url(${props.img})`,
+                                        backgroundSize: "cover"
                                     }}
                                 ></span>
                                 <span className="tile-holder tile-holder-sm">
                                     <span className="title">
-                                        Google Guidelines
+                                        {props.headline}
+                                        <br/><b>{props.source}</b>
                                     </span>
                                 </span>
                             </span>
@@ -33,20 +35,22 @@ const Card = (props: any) => {
                 return (
                     <a
                         className="tile tile-lg tile-sqr tile-purple ripple-effect"
-                        href="#"
+                        href={props.url}
+                        target="_blank"
                     >
                         <span className="content-wrapper">
                             <span className="tile-content">
                                 <span
                                     className="tile-img"
                                     style={{
-                                        backgroundImage:
-                                            'url(https://www.google.com/design/images/materialreel.png)',
+                                        backgroundImage: `url(${props.img})`,
+                                        backgroundSize: "cover"
                                     }}
                                 ></span>
                                 <span className="tile-holder tile-holder-sm">
                                     <span className="title">
-                                        Material Design Reel
+                                    {props.headline}
+                                    <br/><b>{props.source}</b>
                                     </span>
                                 </span>
                             </span>
@@ -58,20 +62,22 @@ const Card = (props: any) => {
                 return (
                     <a
                         className="tile tile-lg tile-sqr tile-cyan ripple-effect"
-                        href="#"
+                        href={props.url}
+                        target="_blank"
                     >
                         <span className="content-wrapper">
                             <span className="tile-content">
                                 <span
                                     className="tile-img"
                                     style={{
-                                        backgroundImage:
-                                            'url(https://www.google.com/design/images/principles.png)',
+                                        backgroundImage: `url(${props.img})`,
+                                        backgroundSize: "cover"
                                     }}
                                 ></span>
                                 <span className="tile-holder tile-holder-sm">
                                     <span className="title">
-                                        Material Design{' '}
+                                    {props.headline}
+                                    <br/><b>{props.source}</b>
                                         <span className="caption">PDF</span>
                                     </span>
                                 </span>
@@ -84,20 +90,22 @@ const Card = (props: any) => {
                 return (
                     <a
                         className="tile tile-lg tile-sqr tile-amber ripple-effect"
-                        href="#"
+                        href={props.url}
+                        target="_blank"
                     >
                         <span className="content-wrapper">
                             <span className="tile-content">
                                 <span
                                     className="tile-img tile-img-bg"
                                     style={{
-                                        backgroundImage:
-                                            'url(https://www.google.com/design/images/doodlearchive.png)',
+                                        backgroundImage: `url(${props.img})`,
+                                        backgroundSize: "cover"
                                     }}
                                 ></span>
                                 <span className="tile-holder tile-holder-sm">
                                     <span className="title">
-                                        Doodle Archive
+                                    {props.headline}
+                                    <br/><b>{props.source}</b>
                                     </span>
                                 </span>
                             </span>
@@ -109,19 +117,21 @@ const Card = (props: any) => {
                 return (
                     <a
                         className="tile tile-lg tile-light-blue ripple-effect"
-                        href="#"
+                        href={props.url}
+                        target="_blank"
                     >
                         <span className="content-wrapper">
                             <span className="tile-content">
                                 <span
                                     className="tile-img tile-img-bg"
                                     style={{
-                                        backgroundImage:
-                                            'url(https://www.google.com/design/images/googleplus.png)',
+                                        backgroundImage: `url(${props.img})`,
+                                        backgroundSize: "cover"
                                     }}
                                 ></span>
                                 <span className="tile-holder tile-holder-sm">
-                                    <span className="title">Google+</span>
+                                    <span className="title">{props.headline}
+                                    <br/><b>{props.source}</b></span>
                                 </span>
                             </span>
                         </span>
@@ -132,20 +142,22 @@ const Card = (props: any) => {
                 return (
                     <a
                         className="tile tile-lg tile-sqr tile-red ripple-effect"
-                        href="#"
+                        href={props.url}
+                        target="_blank"
                     >
                         <span className="content-wrapper">
                             <span className="tile-content">
                                 <span
                                     className="tile-img"
                                     style={{
-                                        backgroundImage:
-                                            'url(https://www.google.com/design/images/design-minutes.png)',
+                                        backgroundImage: `url(${props.img})`,
+                                        backgroundSize: "cover"
                                     }}
                                 ></span>
                                 <span className="tile-holder tile-holder-sm">
                                     <span className="title">
-                                        Design Minutes
+                                    {props.headline}
+                                    <br/><b>{props.source}</b>
                                     </span>
                                 </span>
                             </span>
@@ -157,20 +169,22 @@ const Card = (props: any) => {
                 return (
                     <a
                         className="tile tile-lg tile-sqr tile-indigo ripple-effect"
-                        href="#"
+                        href={props.url}
+                        target="_blank"
                     >
                         <span className="content-wrapper">
                             <span className="tile-content">
                                 <span
                                     className="tile-img"
                                     style={{
-                                        backgroundImage:
-                                            'url(https://www.google.com/design/images/cast.png)',
+                                        backgroundImage: `url(${props.img})`,
+                                        backgroundSize: "cover"
                                     }}
                                 ></span>
                                 <span className="tile-holder tile-holder-sm">
                                     <span className="title">
-                                        Google Cast UX
+                                    {props.headline}
+                                    <br/><b>{props.source}</b>
                                     </span>
                                 </span>
                             </span>
@@ -182,19 +196,21 @@ const Card = (props: any) => {
                 return (
                     <a
                         className="tile tile-lg tile-sqr tile-deep-orange ripple-effect"
-                        href="#"
+                        href={props.url}
+                        target="_blank"
                     >
                         <span className="content-wrapper">
                             <span className="tile-content">
                                 <span
                                     className="tile-img"
                                     style={{
-                                        backgroundImage:
-                                            'url(https://www.google.com/design/images/glass.png)',
+                                        backgroundImage: `url(${props.img})`,
+                                        backgroundSize: "cover"
                                     }}
                                 ></span>
                                 <span className="tile-holder tile-holder-sm">
-                                    <span className="title">Glass Design</span>
+                                    <span className="title">{props.headline}
+                                    <br/><b>{props.source}</b></span>
                                 </span>
                             </span>
                         </span>
@@ -205,20 +221,22 @@ const Card = (props: any) => {
                 return (
                     <a
                         className="tile tile-lg tile-light-green ripple-effect"
-                        href="#"
+                        href={props.url}
+                        target="_blank"
                     >
                         <span className="content-wrapper">
                             <span className="tile-content">
                                 <span
                                     className="tile-img tile-img-bg"
                                     style={{
-                                        backgroundImage:
-                                            'url(https://www.google.com/design/images/webdesigner.png)',
+                                        backgroundImage: `url(${props.img})`,
+                                        backgroundSize: "cover"
                                     }}
                                 ></span>
                                 <span className="tile-holder tile-holder-sm">
                                     <span className="title">
-                                        Google Web Designer
+                                    {props.headline}
+                                    <br/><b>{props.source}</b>
                                     </span>
                                 </span>
                             </span>

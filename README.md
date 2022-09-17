@@ -1,5 +1,7 @@
 # Paul Allen's Card - News Site
 
+A scalable app that uses [News API](https://newsapi.org/) to bring you top headlines from around the world.
+
 This project lives [here](http://paulallenscard.com/).
 
 ## Available Scripts
