@@ -11,6 +11,7 @@
 # production
 /build
 .env*
+src/scripts/client.tsx
 # misc
 .DS_Store
 .env.local
