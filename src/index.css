@@ -7,7 +7,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   /* background-color: #191919 !important; */
 }
-
+label {
+  color: white;
+}
 h1 {
   color: white;
   position: relative;
