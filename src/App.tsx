@@ -8,7 +8,7 @@ var TinyURL = require('tinyurl');
 
 const shortenUrl = async (url: string) => {
 const response = await TinyURL.shorten(url);
-console.log("RESPONSE: ", response)
+// console.log("RESPONSE: ", response)
 return response;
 }
 
@@ -42,14 +42,12 @@ class App extends React.Component<Props, State> {
         articleData.articles.forEach(async(article: any) => {
           if(article.urlToImage) {
             const shortt = await shortenUrl(article.urlToImage)
-            console.log("shortt: ",shortt)
             article.backupImage = article.urlToImage.includes("cloudfront") ? shortt : shortt
           }
         })
         this.setState({ articles: articleData.articles })
     }
     render() {
-      console.log(this.state.articles)
         const showCard = [] as any
         if (!this.state.articles) return <div>loading....</div>
         this.state.articles &&
